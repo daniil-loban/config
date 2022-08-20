@@ -6,8 +6,11 @@
   </head>
   <body></body>
   <script>
-    //location.replace("http://webdevlinks.42web.io/")
+    location.replace(`http://webdevlinks.42web.io?settings=${
+      encodeURIComponent("https://daniil-loban.github.io/config/")
+    }`)
     //location.href = "http://webdevlinks.42web.io/"
+    /*
     function goTo(url) {
      const a = document.createElement("a");
      if(!a.click) { //Only IE has .click so if it doesnt exist use the simple method where the refferer is passed on other browsers.
@@ -20,5 +23,6 @@
      a.click();
     }
     goTo("http://webdevlinks.42web.io/")  
+    */
   </script>  
 </html>
